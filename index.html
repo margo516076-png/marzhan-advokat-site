@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-theme="caramel">
+<html lang="ru" data-theme="caramel" data-font="cormorant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,38 +7,10 @@
 <meta name="description" content="Адвокат Коллегии адвокатов г. Астаны Маржан Дауытова. Более 10 лет в юриспруденции, опыт работы в судебной системе. Уголовная защита, развод и раздел имущества, алименты, гражданские споры. Казахский и русский язык.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Переключатель стилей (для тестирования оформления) -->
-<aside class="lab" aria-label="Выбор оформления">
-  <button class="lab__toggle" type="button" aria-expanded="false" aria-controls="lab-panel">Стиль</button>
-  <div class="lab__panel" id="lab-panel" hidden>
-    <p class="lab__title">Оформление</p>
-    <div class="lab__themes">
-      <button type="button" data-set-theme="caramel"><span class="sw" style="--a:#8B6B47;--b:#FAF7F2"></span>Карамель</button>
-      <button type="button" data-set-theme="powder"><span class="sw" style="--a:#9C6B6E;--b:#FBF6F5"></span>Пудра</button>
-      <button type="button" data-set-theme="sage"><span class="sw" style="--a:#5F6F5A;--b:#F6F6F1"></span>Олива</button>
-      <button type="button" data-set-theme="pearl"><span class="sw" style="--a:#55657A;--b:#F7F7F8"></span>Жемчуг</button>
-    </div>
-    <p class="lab__title">Шрифты</p>
-    <div class="lab__fonts">
-      <button type="button" data-set-font="cormorant">Cormorant</button>
-      <button type="button" data-set-font="playfair">Playfair</button>
-      <button type="button" data-set-font="lora">Lora</button>
-    </div>
-    <label class="lab__check"><input type="checkbox" id="lab-motion" checked> Анимации</label>
-  </div>
-</aside>
-
-<div class="topbar">
-  <div class="wrap topbar__in">
-    <span>Астана · онлайн по всему Казахстану</span>
-    <span>Пн–Пт 09:00–18:00 · <b>RU</b> · <a href="#" class="topbar__kz">KZ</a></span>
-  </div>
-</div>
 
 <header class="header" id="top">
   <div class="wrap header__in">
@@ -67,67 +39,26 @@
 <section class="hero" aria-label="Главный экран">
   <div class="wrap hero__in">
     <div class="hero__text">
-      <div class="slides" data-slider>
-        <div class="slide is-active">
-          <p class="eyebrow">Адвокат · Коллегия адвокатов г. Астаны</p>
-          <h1 class="hero__title">Маржан<br>Дауытова</h1>
-          <p class="lead">Знаю, как суд читает дело, — потому что работала внутри системы.</p>
-          <ul class="checks">
-            <li>Защита по уголовным делам на следствии и в суде</li>
-            <li>Развод, раздел имущества, алименты и споры о детях</li>
-            <li>Гражданские и административные дела</li>
-            <li>Веду дела на казахском и русском языках, очно и онлайн</li>
-          </ul>
-        </div>
-        <div class="slide">
-          <p class="eyebrow">Опыт работы в суде</p>
-          <h2 class="hero__title hero__title--sm">Вижу дело <em>глазами суда</em></h2>
-          <p class="lead">Опыт работы в судебной системе: знаю, какие документы убеждают судью, где оппонент ошибётся и как выстроить позицию с первого заседания.</p>
-        </div>
-        <div class="slide">
-          <p class="eyebrow">Срочная помощь</p>
-          <h2 class="hero__title hero__title--sm">Задержали или <em>вызвали на допрос?</em></h2>
-          <p class="lead">Не подписывайте документы и не давайте показаний до приезда адвоката. Позвоните — выеду или подключусь онлайн.</p>
-        </div>
-      </div>
+      <p class="eyebrow">Адвокат · Коллегия адвокатов г. Астаны</p>
+      <h1 class="hero__title">Маржан<br>Дауытова</h1>
+      <p class="lead">Знаю, как суд читает дело, — потому что работала внутри системы.</p>
+      <ul class="checks">
+        <li>Защита по уголовным делам на следствии и в суде</li>
+        <li>Развод, раздел имущества, алименты и споры о детях</li>
+        <li>Гражданские и административные дела</li>
+        <li>Веду дела на казахском и русском языке, очно и онлайн</li>
+      </ul>
       <div class="hero__btns">
         <a href="#zayavka" class="btn btn--accent">Оценить мою ситуацию</a>
         <a href="https://wa.me/77007710399" class="btn btn--ghost" target="_blank" rel="noopener">Написать в WhatsApp</a>
-      </div>
-      <div class="slider-ctrl">
-        <button type="button" data-prev aria-label="Предыдущий слайд">‹</button>
-        <button type="button" data-next aria-label="Следующий слайд">›</button>
-        <span class="slider-ctrl__num"><b data-num>1</b> / 3</span>
       </div>
     </div>
     <div class="hero__media">
       <div class="portrait parallax"><img src="img/marzhan-portrait.webp" alt="Адвокат Маржан Дауытова" width="1060" height="1130" fetchpriority="high"></div>
       <div class="hero__card">
         <span class="hero__card-k">Оценка перспектив дела</span>
-        <span class="hero__card-v">Честно скажу, есть ли смысл идти в суд — до подписания договора</span>
+        <span class="hero__card-v">Честно скажу, есть ли смысл идти в&nbsp;суд — до подписания договора</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="facts">
-  <div class="wrap facts__in">
-    <div class="fact reveal"><span class="fact__v"><span data-count="10">10</span>+ лет</span><span class="fact__k">опыта в юриспруденции</span></div>
-    <div class="fact reveal"><span class="fact__v">Суд изнутри</span><span class="fact__k">опыт работы в судебной системе</span></div>
-    <div class="fact reveal"><span class="fact__v">2 языка</span><span class="fact__k">веду дела на казахском и русском языке</span></div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap split">
-    <div class="split__head reveal">
-      <p class="eyebrow">Принципы</p>
-      <h2 class="h2">Как я работаю <em>с доверителем</em></h2>
-    </div>
-    <div class="grid3">
-      <div class="principle reveal"><h3>Лично веду дело</h3><p>Каждое заседание и каждый документ — мои. Вы всегда знаете, кому звонить.</p></div>
-      <div class="principle reveal"><h3>Честная оценка</h3><p>Если перспектив мало, скажу об этом на первой встрече, а не после года процесса.</p></div>
-      <div class="principle reveal"><h3>Адвокатская тайна</h3><p>Всё, что вы рассказываете, защищено законом и остаётся между нами.</p></div>
     </div>
   </div>
 </section>
@@ -136,15 +67,15 @@
   <div class="wrap">
     <div class="sec__head reveal">
       <div><p class="eyebrow">Практики</p><h2 class="h2">С чем я помогаю</h2></div>
-      <p class="muted sec__note">Частные лица и небольшой бизнес. На каждое направление — отдельная страница с ценами и вопросами.</p>
+      <p class="muted sec__note">Частные лица и небольшой бизнес.</p>
     </div>
     <div class="practices">
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">01</span><span class="practice__t">Уголовная защита</span><span class="practice__d">Мошенничество, кражи, наркотики, ДТП, экономические статьи. Защита потерпевших.</span><span class="more">Подробнее →</span></a>
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">02</span><span class="practice__t">Развод и раздел имущества</span><span class="practice__d">Раздел квартиры, бизнеса и долгов, брачные договоры, медиация.</span><span class="more">Подробнее →</span></a>
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">03</span><span class="practice__t">Алименты и дети</span><span class="practice__d">Взыскание и изменение алиментов, место жительства ребёнка, порядок общения.</span><span class="more">Подробнее →</span></a>
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">04</span><span class="practice__t">Гражданские споры</span><span class="practice__d">Долги и банки, неосновательное обогащение, наследство, возмещение вреда.</span><span class="more">Подробнее →</span></a>
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">05</span><span class="practice__t">Административные дела</span><span class="practice__d">Обжалование штрафов и решений госорганов, лишение прав.</span><span class="more">Подробнее →</span></a>
-      <a href="#zayavka" class="practice reveal"><span class="practice__n">06</span><span class="practice__t">Киберпреступления</span><span class="practice__d">Интернет-мошенничество, работа с электронными доказательствами.</span><span class="more">Подробнее →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">01</span><span class="practice__t">Уголовная защита</span><span class="practice__d">Мошенничество, кражи, наркотики, ДТП, экономические статьи. Защита потерпевших.</span><span class="more">Обсудить дело →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">02</span><span class="practice__t">Развод и раздел имущества</span><span class="practice__d">Раздел квартиры, бизнеса и долгов, брачные договоры, медиация.</span><span class="more">Обсудить дело →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">03</span><span class="practice__t">Алименты и дети</span><span class="practice__d">Взыскание и изменение алиментов, место жительства ребёнка, порядок общения.</span><span class="more">Обсудить дело →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">04</span><span class="practice__t">Гражданские споры</span><span class="practice__d">Долги и банки, неосновательное обогащение, наследство, возмещение вреда.</span><span class="more">Обсудить дело →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">05</span><span class="practice__t">Административные дела</span><span class="practice__d">Обжалование штрафов и решений госорганов, лишение прав.</span><span class="more">Обсудить дело →</span></a>
+      <a href="#zayavka" class="practice reveal"><span class="practice__n">06</span><span class="practice__t">Киберпреступления</span><span class="practice__d">Интернет-мошенничество, работа с электронными доказательствами.</span><span class="more">Обсудить дело →</span></a>
     </div>
   </div>
 </section>
@@ -158,18 +89,18 @@
       <article class="case reveal">
         <span class="case__big">Отказано полностью</span>
         <span class="case__tag">Гражданское дело · Астана · 2026</span>
-        <h3>Компания не смогла взыскать с моей доверительницы 390 000 ₸</h3>
+        <h3>Компания не смогла взыскать с моей доверительницы 390&nbsp;000&nbsp;₸</h3>
         <p>Компания требовала деньги как неосновательное обогащение. Доказала, что через карту доверительницы средства транзитом ушли другому человеку и она ничего не получила. Суд в иске отказал и взыскал с компании расходы на представителя.</p>
       </article>
       <article class="case reveal">
-        <span class="case__big">183 500 ₸ в месяц</span>
+        <span class="case__big">183&nbsp;500&nbsp;₸ в&nbsp;месяц</span>
         <span class="case__tag">Возмещение вреда · Кассация · 2026</span>
         <h3>Выплаты семье погибшего работника сохранены в Кассационном суде</h3>
-        <p>Представляла вдову и несовершеннолетнего сына. Работодатель дошёл до кассации, но суд оставил решения в силе — ежемесячные выплаты ребёнку до совершеннолетия с индексацией и более 3 млн ₸ единовременно.</p>
+        <p>Представляла вдову и несовершеннолетнего сына. Работодатель дошёл до кассации, но суд оставил решения в силе — ежемесячные выплаты ребёнку до совершеннолетия с индексацией и более 3&nbsp;млн&nbsp;₸ единовременно.</p>
       </article>
       <article class="case reveal">
         <span class="case__big">Прекращено</span>
-        <span class="case__tag">Уголовное дело · ч. 1 ст. 188 УК РК · 2026</span>
+        <span class="case__tag">Уголовное дело · ч.&nbsp;1 ст.&nbsp;188 УК РК · 2026</span>
         <h3>Дело о краже автомобиля прекращено на досудебной стадии</h3>
         <p>Расследование прекращено за отсутствием состава уголовного правонарушения: доказательств хищения не нашлось. Дело не дошло до суда.</p>
       </article>
@@ -181,16 +112,20 @@
 <section class="sec sec--white">
   <div class="wrap quote-split">
     <div class="reveal">
-      <p class="eyebrow">Сильная сторона</p>
-      <h2 class="h2">Судебный процесс — <em>изнутри</em></h2>
-      <p class="body">Я работала в судебной системе, вела частную юридическую практику и работала в юридической компании. Видела дела с разных сторон — поэтому знаю, какие доводы работают, а какие суд пропускает, и готовлю позицию так, как её будет читать судья.</p>
-      <p class="body">Сегодня я адвокат Коллегии адвокатов г. Астаны и лично веду каждое дело — от первой консультации до решения суда.</p>
+      <p class="eyebrow">Подход</p>
+      <h2 class="h2">Как я работаю <em>с доверителем</em></h2>
+      <p class="body">Я видела дела с разных сторон — в судебной системе, в частной практике и в юридической компании. Поэтому знаю, какие доводы работают, а какие суд пропускает, и готовлю позицию так, как её будет читать судья.</p>
     </div>
     <blockquote class="quote reveal">
       <span class="quote__mark" aria-hidden="true">“</span>
       <p>«Мне не нужна удобная версия событий. Мне нужна правда. Потому что настоящая защита начинается с честности».</p>
-      <cite>Маржан Дауытова · адвокат</cite>
+      <cite>Маржан Дауытова, адвокат</cite>
     </blockquote>
+  </div>
+  <div class="wrap grid3 principles">
+    <div class="principle reveal"><h3>Лично веду дело</h3><p>Каждое заседание и каждый документ — мои. Вы всегда знаете, кому звонить.</p></div>
+    <div class="principle reveal"><h3>Честная оценка</h3><p>Если перспектив мало, скажу об этом на первой встрече, а не после года процесса.</p></div>
+    <div class="principle reveal"><h3>Адвокатская тайна</h3><p>Всё, что вы рассказываете, защищено законом и остаётся между нами.</p></div>
   </div>
 </section>
 
@@ -204,19 +139,10 @@
       <p class="body reveal">Более 10 лет в юриспруденции научили меня главному: за свои права нужно бороться, а справедливость требует не только веры, но и последовательных действий.</p>
       <dl class="path reveal">
         <div><dt>Образование</dt><dd>КазГЮУ, специальность «Юриспруденция»</dd></div>
-        <div><dt>Опыт</dt><dd>Работа в судебной системе</dd></div>
-        <div><dt>Практика</dt><dd>Частная юридическая практика и работа в юридической компании</dd></div>
+        <div><dt>Опыт</dt><dd>Судебная система, частная юридическая практика, юридическая компания</dd></div>
         <div><dt>Сегодня</dt><dd>Адвокат, член Коллегии адвокатов г. Астаны</dd></div>
+        <div><dt>Повышение квалификации</dt><dd>Практика применения процессуальных норм по административным делам, 2025<br>Киберпреступность и электронные доказательства, 2025</dd></div>
       </dl>
-    </div>
-  </div>
-  <div class="wrap certs-wrap">
-    <h3 class="h3 reveal">Лицензия и повышение квалификации</h3>
-    <div class="certs">
-      <figure class="cert reveal"><div class="cert__img">Скан лицензии</div><figcaption><b>Лицензия адвоката</b><span>№ [НОМЕР]</span></figcaption></figure>
-      <figure class="cert reveal"><div class="cert__img">Сертификат</div><figcaption><b>Практика применения процессуальных норм по административным делам</b><span>Коллегия адвокатов г. Астаны, 2025</span></figcaption></figure>
-      <figure class="cert reveal"><div class="cert__img">Сертификат</div><figcaption><b>Киберпреступность и электронные доказательства</b><span>Коллегия адвокатов г. Астаны, 2025</span></figcaption></figure>
-      <figure class="cert reveal"><div class="cert__img">Сертификат</div><figcaption><b>[Тема курса]</b><span>Коллегия адвокатов г. Астаны, 2026</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -225,30 +151,22 @@
   <div class="wrap">
     <div class="sec__head reveal"><div><p class="eyebrow">Порядок работы</p><h2 class="h2">От обращения до решения</h2></div></div>
     <ol class="steps">
-      <li class="step reveal"><span class="step__n">1</span><h3>Обращение</h3><p>Звонок, WhatsApp или заявка на сайте.</p><span class="pill">Ответ в течение [времени]</span></li>
-      <li class="step reveal"><span class="step__n">2</span><h3>Оценка дела</h3><p>Изучаю документы, называю риски, перспективы и стоимость.</p><span class="pill">[Бесплатно / от ЦЕНА ₸]</span></li>
-      <li class="step reveal"><span class="step__n">3</span><h3>Договор</h3><p>План, сроки и цена — письменно. Можно подписать через ЭЦП.</p><span class="pill">Цена не меняется</span></li>
-      <li class="step reveal"><span class="step__n">4</span><h3>Ведение дела</h3><p>Работаю до итогового решения и держу вас в курсе.</p><span class="pill">Отчёт после каждого этапа</span></li>
+      <li class="step reveal"><span class="step__n">1</span><h3>Обращение</h3><p>Звонок, WhatsApp или заявка на сайте.</p></li>
+      <li class="step reveal"><span class="step__n">2</span><h3>Оценка дела</h3><p>Изучаю документы, называю риски, перспективы и стоимость.</p></li>
+      <li class="step reveal"><span class="step__n">3</span><h3>Договор</h3><p>План, сроки и цена — письменно. Можно подписать через ЭЦП. Цена не меняется.</p></li>
+      <li class="step reveal"><span class="step__n">4</span><h3>Ведение дела</h3><p>Работаю до итогового решения и сообщаю о каждом этапе.</p></li>
     </ol>
   </div>
 </section>
 
-<section class="sec">
-  <div class="wrap">
-    <div class="sec__head reveal"><div><p class="eyebrow">Отзывы</p><h2 class="h2">Что говорят доверители</h2></div><a href="#" class="more">Отзывы в 2ГИС →</a></div>
-    <div class="reviews">
-      <figure class="review reveal"><blockquote>«[Отзыв — только с согласия доверителя]»</blockquote><figcaption>[Имя] · [тип дела]</figcaption></figure>
-      <figure class="review reveal"><blockquote>«[Отзыв]»</blockquote><figcaption>[Имя] · [тип дела]</figcaption></figure>
-      <figure class="review reveal"><blockquote>«[Отзыв]»</blockquote><figcaption>[Имя] · [тип дела]</figcaption></figure>
-    </div>
-  </div>
-</section>
+<!-- Отзывы: вернуть блок, когда появятся реальные отзывы с согласия доверителей -->
 
-<section class="sec sec--tint" id="voprosy">
+<section class="sec" id="voprosy">
   <div class="wrap wrap--narrow">
     <div class="reveal"><p class="eyebrow">Вопросы</p><h2 class="h2">Коротко о главном</h2></div>
     <div class="faq">
-      <details class="reveal" open><summary>Сколько стоят услуги?</summary><p>Консультация с изучением документов — от [ЦЕНА] ₸, ведение дела в первой инстанции — от [ЦЕНА] ₸. Точная стоимость фиксируется в договоре после анализа документов и не меняется по ходу дела.</p></details>
+      <details class="reveal"><summary>Меня задержали или вызвали на допрос. Что делать?</summary><p>Не подписывайте документы и не давайте показаний до приезда адвоката — это ваше право. Позвоните: выеду или подключусь онлайн.</p></details>
+      <details class="reveal"><summary>Сколько стоят услуги?</summary><p>Стоимость зависит от категории и стадии дела. Я называю её после изучения документов и фиксирую в договоре — по ходу дела она не меняется.</p></details>
       <details class="reveal"><summary>Есть ли смысл идти в суд?</summary><p>Это первое, что я оцениваю. Иногда выгоднее договориться или заключить медиативное соглашение — тогда я так и скажу.</p></details>
       <details class="reveal"><summary>Что взять на первую встречу?</summary><p>Удостоверение личности и все документы по делу: повестки, протоколы, иски, договоры, переписку. Если документов нет — приходите так, разберёмся вместе.</p></details>
       <details class="reveal"><summary>Вы работаете только в Астане?</summary><p>Офис в Астане, но работаю по всему Казахстану: консультации по видеосвязи, договор через ЭЦП, многие заседания проходят онлайн.</p></details>
@@ -296,10 +214,10 @@
 
 <footer class="footer" id="kontakty">
   <div class="wrap footer__grid">
-    <div><p class="footer__name">Маржан Дауытова</p><p class="muted">Адвокат, член Коллегии адвокатов г. Астаны. Лицензия № [НОМЕР].</p></div>
+    <div><p class="footer__name">Маржан Дауытова</p><p class="muted">Адвокат, член Коллегии адвокатов г. Астаны.</p></div>
     <div><p class="eyebrow">Практики</p><a href="#praktiki">Уголовная защита</a><a href="#praktiki">Развод и раздел имущества</a><a href="#praktiki">Алименты и дети</a><a href="#praktiki">Гражданские споры</a></div>
     <div><p class="eyebrow">Связаться</p><a href="tel:+77007710399" class="footer__phone">+7 700 771 03 99</a><a href="https://wa.me/77007710399" target="_blank" rel="noopener">WhatsApp — тот же номер</a><a href="https://instagram.com/advokat_dauytova_marzhan" target="_blank" rel="noopener">Instagram @advokat_dauytova_marzhan</a></div>
-    <div><p class="eyebrow">Офис</p><p class="muted">Астана, ул. Сыганак, 47, БЦ «Евроцентр», 4 этаж, офис 413/1</p><a href="https://2gis.kz/astana/search/%D0%A1%D1%8B%D0%B3%D0%B0%D0%BD%D0%B0%D0%BA%2047" target="_blank" rel="noopener">Маршрут в 2ГИС →</a></div>
+    <div><p class="eyebrow">Офис</p><p class="muted">Астана, ул. Сыганак, 47, БЦ «Евроцентр», 4 этаж, офис 413/1</p><p class="muted">Пн–Пт 09:00–18:00 · онлайн по всему Казахстану</p><a href="https://2gis.kz/astana/search/%D0%A1%D1%8B%D0%B3%D0%B0%D0%BD%D0%B0%D0%BA%2047" target="_blank" rel="noopener">Маршрут в 2ГИС →</a></div>
   </div>
   <div class="wrap footer__bottom small muted"><span>© 2026 Адвокат Маржан Дауытова</span><span>Материалы сайта носят информационный характер и не являются публичной офертой.</span></div>
 </footer>
