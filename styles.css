@@ -142,6 +142,10 @@ em { font-style: italic; color: var(--accent); }
 
 .about { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
 .photo { aspect-ratio: 4 / 5; }
+.portrait, .photo { overflow: hidden; padding: 0; }
+.portrait img, .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.portrait img { object-position: 50% 35%; }
+.photo img { object-position: 50% 50%; }
 .path { margin: 32px 0 0; }
 .path div { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .path dt { font: 500 20px var(--serif); color: var(--accent); }
