@@ -29,7 +29,7 @@ em { font-style: italic; color: var(--accent); }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 30px; font: 600 15px var(--sans); letter-spacing: .01em; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .25s, background .25s, color .25s, box-shadow .25s; }
 .btn--accent { background: var(--deep); color: #fff; }
 .btn--accent:hover { background: var(--deep-hover); transform: translateY(-2px); box-shadow: 0 12px 26px -14px var(--deep); }
-.btn--ghost { border-color: var(--ink); color: var(--ink); }
+.btn--ghost { background: transparent; border-color: var(--ink); color: var(--ink); }
 .btn--ghost:hover { background: var(--ink); color: var(--bg); }
 .btn--sm { min-height: 44px; padding: 0 22px; font-size: 14px; }
 .btn--block { width: 100%; }
@@ -178,6 +178,20 @@ em { font-style: italic; color: var(--accent); }
     html { scroll-behavior: auto; }
 }
 
+/* ===== Окно заявки ===== */
+.modal { border: 0; padding: 0; width: min(560px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); background: var(--tint); color: var(--ink); box-shadow: 0 40px 80px -30px rgba(30,22,16,.55); overflow: auto; }
+.modal::backdrop { background: rgba(40,30,24,.55); backdrop-filter: blur(3px); }
+.modal[open] { animation: modalIn .35s cubic-bezier(.2,.7,.2,1); }
+@keyframes modalIn { from { opacity: 0; transform: translateY(16px); } }
+.modal .form { background: none; position: relative; }
+.modal h3 { font: 500 calc(30px * var(--serif-scale))/1.15 var(--serif); margin: 0 40px 4px 0; }
+.modal__note { margin: 0 0 12px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.modal__done { padding: 40px; position: relative; display: grid; gap: 12px; justify-items: start; }
+.modal__done[hidden], .modal__form[hidden] { display: none; }
+.modal__close { position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border: 0; background: none; font: 300 32px/1 var(--sans); color: var(--muted); cursor: pointer; }
+.modal__close:hover { color: var(--ink); }
+body.modal-open { overflow: hidden; }
+
 /* ===== Мобильная панель ===== */
 .mbar { display: none; }
 
@@ -218,7 +232,7 @@ em { font-style: italic; color: var(--accent); }
   .logo__name { font-size: 18px; }
   .hero__btns .btn { width: 100%; }
   .path div { grid-template-columns: 1fr; gap: 4px; }
-  .form, .quote { padding: 26px; }
+  .form, .quote, .modal__done { padding: 26px; }
   .sec { padding: 72px 0; }
   .hero__media { min-height: 440px; }
   .portrait { border-radius: 180px 180px 0 0; }

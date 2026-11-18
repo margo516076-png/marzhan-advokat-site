@@ -186,7 +186,7 @@
         <li>Всё, что вы расскажете, — адвокатская тайна</li>
       </ul>
     </div>
-    <form class="form reveal" id="lead-form" novalidate>
+    <form class="form lead-form reveal" id="lead-form" novalidate>
       <h3>Заявка на консультацию</h3>
       <label for="f-name">Имя</label>
       <input id="f-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name">
@@ -204,7 +204,7 @@
       <label for="f-msg">Коротко о ситуации <span class="muted">(необязательно)</span></label>
       <textarea id="f-msg" name="msg" rows="3" placeholder="Что произошло и на какой стадии дело"></textarea>
       <button type="submit" class="btn btn--accent btn--block">Отправить в WhatsApp</button>
-      <p class="small form__err" id="f-err" role="alert" hidden>Укажите телефон, чтобы я могла связаться с вами.</p>
+      <p class="small form__err" role="alert" hidden>Укажите телефон, чтобы я могла связаться с вами.</p>
       <p class="small muted">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
     </form>
   </div>
@@ -228,6 +228,41 @@
   <a href="https://wa.me/77007710399" target="_blank" rel="noopener" class="mbar__wa">WhatsApp</a>
   <a href="#zayavka">Заявка</a>
 </nav>
+
+<!-- Окно заявки -->
+<dialog class="modal" id="lead-modal" aria-labelledby="m-title">
+  <form class="form lead-form modal__form" novalidate>
+    <button type="button" class="modal__close" data-close aria-label="Закрыть">×</button>
+    <p class="eyebrow">Консультация</p>
+    <h3 id="m-title">Опишите ситуацию — оценю перспективы</h3>
+    <p class="modal__note">Назову риски и стоимость до подписания договора. Всё, что вы расскажете, — адвокатская тайна.</p>
+    <label for="m-name">Имя</label>
+    <input id="m-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name">
+    <label for="m-phone">Телефон или WhatsApp</label>
+    <input id="m-phone" name="phone" type="tel" placeholder="+7 ___ ___ __ __" autocomplete="tel" required>
+    <fieldset>
+      <legend>Тип дела</legend>
+      <div class="chips">
+        <label><input type="radio" name="type" value="Уголовное" checked><span>Уголовное</span></label>
+        <label><input type="radio" name="type" value="Развод / алименты"><span>Развод / алименты</span></label>
+        <label><input type="radio" name="type" value="Гражданское"><span>Гражданское</span></label>
+        <label><input type="radio" name="type" value="Административное"><span>Административное</span></label>
+      </div>
+    </fieldset>
+    <label for="m-msg">Коротко о ситуации <span class="muted">(необязательно)</span></label>
+    <textarea id="m-msg" name="msg" rows="3" placeholder="Что произошло и на какой стадии дело"></textarea>
+    <button type="submit" class="btn btn--accent btn--block">Отправить в WhatsApp</button>
+    <p class="small form__err" role="alert" hidden>Укажите телефон, чтобы я могла связаться с вами.</p>
+    <p class="small muted">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+  </form>
+  <div class="modal__done" hidden>
+    <button type="button" class="modal__close" data-close aria-label="Закрыть">×</button>
+    <p class="eyebrow">Почти готово</p>
+    <h3>Открыла WhatsApp с вашим сообщением</h3>
+    <p class="modal__note">Нажмите «Отправить» в WhatsApp — и я свяжусь с вами. Если WhatsApp не открылся, позвоните: <a href="tel:+77007710399">+7 700 771 03 99</a>.</p>
+    <button type="button" class="btn btn--ghost" data-close>Закрыть</button>
+  </div>
+</dialog>
 
 <script src="script.js"></script>
 </body>
